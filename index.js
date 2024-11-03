@@ -1,3 +1,7 @@
+// template_also8qi
+// service_48nkoye
+// pPISoL89UGy9rFA7b
+
 let isModalOpen = false;
 let contrastToggle = false;
 const scaleFactor = 1 / 20;
@@ -25,6 +29,8 @@ function toggleContrast() {
   }
 }
 
+
+// This is where you set up emailjs that is connected to your gmail.
 function contact(event) {
   event.preventDefault();
   const loading = document.querySelector(".modal__overlay--loading");
@@ -32,10 +38,10 @@ function contact(event) {
   loading.classList += " modal__overlay--visible";
   emailjs
     .sendForm(
-      "service_80ih0if",
-      "template_d9refyl",
+      "service_48nkoye",
+      "template_also8qi",
       event.target,
-      "user_K1PoFs8pB2YVWStDxrUls"
+      "pPISoL89UGy9rFA7b"
     )
     .then(() => {
       loading.classList.remove("modal__overlay--visible");
@@ -44,7 +50,7 @@ function contact(event) {
     .catch(() => {
       loading.classList.remove("modal__overlay--visible");
       alert(
-        "The email service is temporarily unavailable. Please contact me directly on email@email.com"
+        "The email service is temporarily unavailable. Please contact me directly on castanetokevin@gmail.com"
       );
     });
 }
