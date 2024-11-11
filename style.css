@@ -602,7 +602,7 @@ nav {
   margin-bottom: 135px;
 }
 
-.project__img {
+.project__video {
   width: 100%;
   transition: all 600ms ease;
 }
@@ -830,6 +830,11 @@ footer {
   .modal__half {
     width: 100%;
   }
+
+  .project__video {
+    width: 768px;
+    transform: scale(1.02);
+  }
 }
 
 /* Small phones */
@@ -857,5 +862,10 @@ footer {
   }
   .modal__half {
     padding: 40px;
+  }
+
+  .project__video {
+    width: 450px;
+    transform: scale(1.02);
   }
 }
